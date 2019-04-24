@@ -54,6 +54,7 @@
     <Compile Include="Decorator\StudentRegDecorator.cs" />
     <Compile Include="Decorator\StudentPayDecorator.cs" />
     <Compile Include="Decorator\StudentPreviewDecorator.cs" />
+    <Compile Include="Decorator\SyntaxChain.cs" />
     <Compile Include="NoticeAttribute.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

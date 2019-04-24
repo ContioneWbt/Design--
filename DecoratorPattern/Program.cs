@@ -18,12 +18,14 @@ namespace DecoratorPattern
             {
                 Console.WriteLine("*********************************************");
                 {
-                    AbstractStudent student = new StudentVip() {Id = 20,Name = "候鸟" };
-                    student = new StudentFirstDecorator(student);//里氏替换 引用替换一下
-                    student = new StudentSecondDecorator(student);
-                    student = new StudentThirdDecorator(student);
-                    student = new StudentFourthDecorator(student);
-                    student = new StudentNotices(student);
+                    AbstractStudent student = new StudentVip() { Id = 20, Name = "候鸟" }.First().Second().Third().Fourth().Notices();
+                    #region 嵌套
+                    //student = new StudentFirstDecorator(student);//里氏替换 引用替换一下
+                    //student = new StudentSecondDecorator(student);
+                    //student = new StudentThirdDecorator(student);
+                    //student = new StudentFourthDecorator(student);
+                    //student = new StudentNotices(student); 
+                    #endregion
                     student.Study();
                 }
             }
