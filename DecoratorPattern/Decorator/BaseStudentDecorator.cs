@@ -46,7 +46,7 @@ namespace DecoratorPattern.Decorator
                     try
                     {
                         // 调用方法
-                        item.Invoke(this, null);
+                        item.Invoke(this, new object[] { "param" });
                     }
                     catch
                     {

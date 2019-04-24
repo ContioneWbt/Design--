@@ -27,7 +27,7 @@ namespace DecoratorPattern.Decorator
         }
 
         [Notice(20)]
-        private void Notice1()
+        private void Notice1(string param)
         {
             Console.WriteLine("中级大招！");
         }
