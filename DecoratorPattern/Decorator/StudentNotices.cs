@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -10,19 +11,25 @@ namespace DecoratorPattern.Decorator
     /// <summary>
     /// 父类是BaseStudentDecorator，爷爷类AbstractStudent
     /// </summary>
-    public class StudentHomeworkDecorator : BaseStudentDecorator
+    public class StudentNotices : BaseStudentDecorator
     {
-        public StudentHomeworkDecorator(AbstractStudent student)
+        public StudentNotices(AbstractStudent student)
             : base(student)//表示父类的构造函数
         {
+          
         }
 
         public override void Study()
         {
             base.Study();
+            //执行Notice
+            base.Notice();
+        }
 
-            Console.WriteLine("巩固练习");
-           
+        [Notice(20)]
+        private void Notice1()
+        {
+            Console.WriteLine("进来了了解！");
         }
     }
 }

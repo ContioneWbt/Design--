@@ -16,34 +16,21 @@ namespace DecoratorPattern
         {
             try
             {
-                Console.WriteLine("欢迎来到.net高级班vip课程，今天是设计模式的学习");
+                Console.WriteLine("*********************************************");
                 {
                     AbstractStudent student = new StudentVip()
                     {
-                        Id = 381,
+                        Id = 20,
                         Name = "候鸟"
                     };
-                    //student.Study();
-                    //BaseStudentDecorator decorator = new BaseStudentDecorator(student);
-                    //AbstractStudent decorator = new BaseStudentDecorator(student);//里氏替换
-                    //decorator.Study();
-                    //student = new BaseStudentDecorator(student);//引用替换一下
-                    //student.Study();
-
-                    //StudentVideoDecorator decorator = new StudentVideoDecorator(student);
-                    //BaseStudentDecorator decorator = new StudentVideoDecorator(student);//里氏替换
-                    //AbstractStudent decorator = new StudentVideoDecorator(student);//里氏替换
-                    /*student = new StudentVideoDecorator(student);*///引用替换一下
+                    AbstractStudent decorator4 = new StudentVideoDecorator(student);//里氏替换
+                    student = new StudentVideoDecorator(student);//引用替换一下
                     student = new StudentHomeworkDecorator(student);
                     student = new StudentCommentDecorator(student);
                     student = new StudentVideoDecorator(student);
                     student = new StudentUpdateDecorator(student);
+                    student = new StudentNotices(student);
                     student.Study();
-                }
-                {
-                    int i = 3;
-                    //int k = 4;
-                    i = 4;
                 }
             }
             catch (Exception ex)

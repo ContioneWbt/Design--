@@ -15,11 +15,13 @@ namespace DecoratorPattern.Decorator
         public StudentUpdateDecorator(AbstractStudent student)
             : base(student)//表示父类的构造函数
         {
+          
         }
         public override void Study()
         {
             base.Study();
             Console.WriteLine("课程免费升级");
+            //base.Notice();
         }
     }
 }

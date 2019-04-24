@@ -15,7 +15,6 @@ namespace DecoratorPattern.Decorator
         public StudentCommentDecorator(AbstractStudent student)
             : base(student)//表示父类的构造函数
         {
-
         }
 
         public override void Study()
