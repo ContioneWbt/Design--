@@ -24,14 +24,7 @@ namespace DecoratorPattern
                     student = new StudentThirdDecorator(student);
                     student = new StudentFourthDecorator(student);
                     student = new StudentNotices(student);
-                    try
-                    {
-                        student.Study();
-                    }
-                    catch (Exception ex)
-                    {
-                        Console.WriteLine(ex.ToString());
-                    }
+                    student.Study();
                 }
             }
             catch (Exception ex)
