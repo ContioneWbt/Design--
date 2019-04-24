@@ -46,11 +46,11 @@
   <ItemGroup>
     <Compile Include="AbstractStudent.cs" />
     <Compile Include="Decorator\BaseStudentDecorator.cs" />
-    <Compile Include="Decorator\StudentCommentDecorator.cs" />
-    <Compile Include="Decorator\StudentUpdateDecorator.cs" />
+    <Compile Include="Decorator\StudentThirdDecorator.cs" />
+    <Compile Include="Decorator\StudentFourthDecorator.cs" />
     <Compile Include="Decorator\StudentNotices.cs" />
-    <Compile Include="Decorator\StudentVideoDecorator.cs" />
-    <Compile Include="Decorator\StudentHomeworkDecorator.cs" />
+    <Compile Include="Decorator\StudentFirstDecorator.cs" />
+    <Compile Include="Decorator\StudentSecondDecorator.cs" />
     <Compile Include="Decorator\StudentRegDecorator.cs" />
     <Compile Include="Decorator\StudentPayDecorator.cs" />
     <Compile Include="Decorator\StudentPreviewDecorator.cs" />

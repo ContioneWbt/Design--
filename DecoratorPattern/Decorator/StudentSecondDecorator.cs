@@ -10,9 +10,9 @@ namespace DecoratorPattern.Decorator
     /// <summary>
     /// 父类是BaseStudentDecorator，爷爷类AbstractStudent
     /// </summary>
-    public class StudentHomeworkDecorator : BaseStudentDecorator
+    public class StudentSecondDecorator : BaseStudentDecorator
     {
-        public StudentHomeworkDecorator(AbstractStudent student)
+        public StudentSecondDecorator(AbstractStudent student)
             : base(student)//表示父类的构造函数
         {
         }
@@ -21,7 +21,7 @@ namespace DecoratorPattern.Decorator
         {
             base.Study();
 
-            Console.WriteLine("巩固练习");
+            Console.WriteLine("装逼技巧二巩固练习");
            
         }
     }

@@ -23,13 +23,15 @@ namespace DecoratorPattern.Decorator
         {
             base.Study();
             //执行Notice
+            throw new Exception("出错啦");
+
             base.Notice();
         }
 
         [Notice(20)]
         private void Notice1()
         {
-            Console.WriteLine("进来了了解！");
+            Console.WriteLine("中级大招！");
         }
     }
 }

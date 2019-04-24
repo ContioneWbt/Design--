@@ -10,19 +10,17 @@ namespace DecoratorPattern.Decorator
     /// <summary>
     /// 父类是BaseStudentDecorator，爷爷类AbstractStudent
     /// </summary>
-    public class StudentCommentDecorator : BaseStudentDecorator
+    public class StudentFirstDecorator : BaseStudentDecorator
     {
-        public StudentCommentDecorator(AbstractStudent student)
+        public StudentFirstDecorator(AbstractStudent student)
             : base(student)//表示父类的构造函数
         {
+        
         }
-
         public override void Study()
         {
             base.Study();
-
-            Console.WriteLine("点评");
-           
+            Console.WriteLine("装逼技巧一视频代码回看");
         }
     }
 }

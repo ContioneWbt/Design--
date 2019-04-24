@@ -18,19 +18,20 @@ namespace DecoratorPattern
             {
                 Console.WriteLine("*********************************************");
                 {
-                    AbstractStudent student = new StudentVip()
-                    {
-                        Id = 20,
-                        Name = "候鸟"
-                    };
-                    AbstractStudent decorator4 = new StudentVideoDecorator(student);//里氏替换
-                    student = new StudentVideoDecorator(student);//引用替换一下
-                    student = new StudentHomeworkDecorator(student);
-                    student = new StudentCommentDecorator(student);
-                    student = new StudentVideoDecorator(student);
-                    student = new StudentUpdateDecorator(student);
+                    AbstractStudent student = new StudentVip() {Id = 20,Name = "候鸟" };
+                    student = new StudentFirstDecorator(student);//里氏替换 引用替换一下
+                    student = new StudentSecondDecorator(student);
+                    student = new StudentThirdDecorator(student);
+                    student = new StudentFourthDecorator(student);
                     student = new StudentNotices(student);
-                    student.Study();
+                    try
+                    {
+                        student.Study();
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.ToString());
+                    }
                 }
             }
             catch (Exception ex)

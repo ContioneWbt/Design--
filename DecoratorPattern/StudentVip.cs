@@ -17,7 +17,7 @@ namespace DecoratorPattern
         /// </summary>
         public override void Study()
         {
-            Console.WriteLine("{0} 一个.net 学员", base.Name);
+            Console.WriteLine("{0} 一个.net 学员 装逼开始", base.Name);
         }
     }
 }
