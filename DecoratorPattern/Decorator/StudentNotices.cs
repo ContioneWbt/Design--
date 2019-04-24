@@ -23,8 +23,6 @@ namespace DecoratorPattern.Decorator
         {
             base.Study();
             //执行Notice
-            throw new Exception("出错啦");
-
             base.Notice();
         }
 
