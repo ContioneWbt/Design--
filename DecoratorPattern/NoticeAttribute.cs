@@ -28,8 +28,5 @@ namespace DecoratorPattern
         {
             this.subjectID = subjectID;
         }
-
-       
     }
-   
 }
