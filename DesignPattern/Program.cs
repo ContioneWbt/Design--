@@ -80,7 +80,7 @@ namespace DesignPattern
         {
             try
             {
-                Console.WriteLine("欢迎来到.Net高级班课程，今晚学习设计模式");
+                Console.WriteLine("设计模式");
             }
             catch (Exception ex)
             {
