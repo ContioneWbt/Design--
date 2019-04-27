@@ -12,11 +12,8 @@ namespace DecoratorPattern.Decorator
     /// </summary>
     public class StudentPayDecorator : BaseStudentDecorator
     {
-        public StudentPayDecorator(AbstractStudent student)
-            : base(student)//表示父类的构造函数
-        {
-
-        }
+        //表示父类的构造函数
+        public StudentPayDecorator(AbstractStudent student) : base(student) { }
 
         public override void Study()
         {
